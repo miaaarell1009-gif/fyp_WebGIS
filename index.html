@@ -1034,113 +1034,6 @@ body.dark .donut::after{
     background:#18242e;
 }
 
-
-/* =========================================================
-   DARK MODE - VISIBILITY FIX (STRONG OVERRIDES)
-========================================================= */
-
-body.dark,
-body.dark main,
-body.dark .page,
-body.dark .content{
-    background:#101820 !important;
-    color:#eef4f8 !important;
-}
-
-body.dark .panel,
-body.dark .stat-card,
-body.dark .chart-card,
-body.dark .report-card,
-body.dark .summary-card{
-    background:#18242e !important;
-    color:#eef4f8 !important;
-    border-color:#31434f !important;
-}
-
-body.dark .panel h1,
-body.dark .panel h2,
-body.dark .panel h3,
-body.dark .panel h4,
-body.dark .panel h5,
-body.dark .panel h6,
-body.dark .panel-title,
-body.dark .page-title,
-body.dark .card-title{
-    color:#ffffff !important;
-}
-
-body.dark .page-subtitle,
-body.dark .stat-label,
-body.dark .muted,
-body.dark small{
-    color:#c2ced6 !important;
-}
-
-/* Statistik / jadual */
-body.dark .data-table{
-    background:#18242e !important;
-    color:#eef4f8 !important;
-}
-
-body.dark .data-table th{
-    background:#223440 !important;
-    color:#ffffff !important;
-    border-bottom:1px solid #667985 !important;
-}
-
-body.dark .data-table td{
-    background:#18242e !important;
-    color:#e8eef3 !important;
-    border-bottom:1px solid #42545f !important;
-}
-
-body.dark .data-table tr:nth-child(even) td{
-    background:#1b2a34 !important;
-}
-
-body.dark .data-table tr:hover td{
-    background:#29404e !important;
-    color:#ffffff !important;
-}
-
-/* Tetapan */
-body.dark .settings{
-    background:#18242e !important;
-    color:#eef4f8 !important;
-}
-
-body.dark .settings-title h3,
-body.dark .settings-title h3 span,
-body.dark .setting-row > span,
-body.dark .setting-row > label{
-    color:#f5f8fa !important;
-}
-
-body.dark .setting-section h4{
-    color:#9eabb5 !important;
-}
-
-body.dark .setting-row{
-    color:#eef4f8 !important;
-    border-color:#31434f !important;
-}
-
-body.dark .setting-row button{
-    background:#e9f3f8 !important;
-    color:#0879b6 !important;
-}
-
-body.dark .language-select{
-    background:#253640 !important;
-    color:#ffffff !important;
-    border-color:#49606d !important;
-}
-
-body.dark .language-select option{
-    background:#253640 !important;
-    color:#ffffff !important;
-}
-
 /* =========================================================
    LANGUAGE + COMPLAINT
 ========================================================= */
@@ -1645,8 +1538,6 @@ body.dark .complaint-status{background:#1c3528;}
 
             <div class="map-dashboard">
 
-                <!-- Dashboard map kekal bersih seperti paparan peta penuh.
-                     Filter dan label kategori hanya dipaparkan di Peta Taburan. -->
                 <div id="map"></div>
 
             </div>
@@ -1849,7 +1740,7 @@ body.dark .complaint-status{background:#1c3528;}
                         <th>JUMLAH KES</th>
                         <th>RUMAH</th>
                         <th>KEDAI</th>
-                        <th>MASJID/KUIL/TOKONG</th>
+                        <th>MASJID/SURAU/TOKONG</th>
                         <th>LAIN-LAIN</th>
                     </tr>
 
@@ -1935,32 +1826,7 @@ body.dark .complaint-status{background:#1c3528;}
 
     </div>
 
-    <div class="area-comparison panel" id="areaComparison" aria-live="polite">
-        <div class="area-comparison-head">
-            <div>
-                <div class="panel-title" id="housingTotalTitle">JUMLAH KES PERUMAHAN</div>
-                <div class="housing-total"><strong id="housingTotalCases">434</strong> <span class="area-case-unit">kes</span></div>
-                <div class="page-subtitle" id="areaComparisonSubtitle">Kes mengikut kawasan bagi tahun 2025</div>
-            </div>
-            <span class="year-badge" id="areaComparisonYear">2025</span>
-        </div>
-        <div class="area-comparison-grid">
-            <article class="area-card area-card-selatan">
-                <span class="area-name">Ipoh Selatan</span>
-                <strong id="ipohSelatanCases">372</strong>
-                <small class="area-case-unit">kes</small>
-            </article>
-            <article class="area-card area-card-barat">
-                <span class="area-name">Ipoh Barat</span>
-                <strong id="ipohBaratCases">245</strong>
-                <small class="area-case-unit">kes</small>
-            </article>
-        </div>
-    </div>
-
     <div class="map-page-container" id="mapPageHost">
-
-        <div class="map-case-labels" id="mapPageLabels"></div>
 
         <!-- QGIS2Web #map is moved here when this page is opened -->
 
@@ -2002,9 +1868,71 @@ body.dark .complaint-status{background:#1c3528;}
         <div class="chart-container"
              style="height:500px">
 
-            <div class="chart" id="trendPageChart">
-                    <!-- Bars are generated automatically from the selected year. -->
+            <div class="chart">
+
+                <div class="bar" style="height:72%">
+                    <strong>69</strong>
+                    <span>JAN</span>
                 </div>
+
+                <div class="bar" style="height:66%">
+                    <strong>65</strong>
+                    <span>FEB</span>
+                </div>
+
+                <div class="bar" style="height:53%">
+                    <strong>52</strong>
+                    <span>MAC</span>
+                </div>
+
+                <div class="bar" style="height:67%">
+                    <strong>64</strong>
+                    <span>APR</span>
+                </div>
+
+                <div class="bar" style="height:59%">
+                    <strong>58</strong>
+                    <span>MEI</span>
+                </div>
+
+                <div class="bar" style="height:52%">
+                    <strong>51</strong>
+                    <span>JUN</span>
+                </div>
+
+                <div class="bar" style="height:40%">
+                    <strong>39</strong>
+                    <span>JUL</span>
+                </div>
+
+                <div class="bar" style="height:70%">
+                    <strong>68</strong>
+                    <span>OGOS</span>
+                </div>
+
+                <div class="bar" style="height:45%">
+                    <strong>44</strong>
+                    <span>SEP</span>
+                </div>
+
+                <div class="bar" style="height:42%">
+                    <strong>41</strong>
+                    <span>OKT</span>
+                </div>
+
+                <div class="bar" style="height:32%">
+                    <strong>31</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="bar" style="height:22%">
+                    <strong>22</strong>
+                    <span>DIS</span>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -2037,46 +1965,28 @@ body.dark .complaint-status{background:#1c3528;}
 
         <div class="stat-card">
             <div class="stat-label">RUMAH</div>
-            <div class="stat-number">434</div>
-            <div class="stat-label">70.3%</div>
+            <div class="stat-number">648</div>
+            <div class="stat-label">90.3%</div>
         </div>
 
         <div class="stat-card">
             <div class="stat-label">KEDAI</div>
-            <div class="stat-number">65</div>
-            <div class="stat-label">10.5%</div>
+            <div class="stat-number">130</div>
+            <div class="stat-label">18.1%</div>
         </div>
 
         <div class="stat-card">
-            <div class="stat-label">MASJID/KUIL/TOKONG</div>
-            <div class="stat-number">6</div>
-            <div class="stat-label">1.0%</div>
+            <div class="stat-label">MASJID/SURAU/TOKONG</div>
+            <div class="stat-number">9</div>
+            <div class="stat-label">1.3%</div>
         </div>
 
         <div class="stat-card">
             <div class="stat-label">LAIN-LAIN</div>
-            <div class="stat-number">112</div>
-            <div class="stat-label">18.2%</div>
+            <div class="stat-number">53</div>
+            <div class="stat-label">7.4%</div>
         </div>
 
-    </div>
-
-    <div class="panel premise-chart-panel">
-        <div class="panel-header">
-            <div>
-                <div class="panel-title" id="premisePieTitle">CARTA PAI JENIS PREMIS</div>
-                <div class="page-subtitle" id="premisePieSubtitle">Pecahan kes mengikut kategori premis bagi tahun 2025</div>
-            </div>
-            <span class="year-badge" id="premisePieYear">2025</span>
-        </div>
-        <div class="premise-chart-body">
-            <div class="premise-pie-wrap">
-                <div class="premise-pie" id="premisePie" role="img" aria-label="Carta pai jenis premis">
-                    <div class="premise-pie-center"><strong id="premisePieTotal">617</strong><span>Jumlah Kes</span></div>
-                </div>
-            </div>
-            <div class="premise-pie-legend" id="premisePieLegend"></div>
-        </div>
     </div>
 
 </section>
@@ -2126,7 +2036,7 @@ body.dark .complaint-status{background:#1c3528;}
                         <th>JUMLAH KES</th>
                         <th>RUMAH</th>
                         <th>KEDAI</th>
-                        <th>MASJID/KUIL/TOKONG</th>
+                        <th>MASJID/SURAU/TOKONG</th>
                         <th>LAIN-LAIN</th>
                     </tr>
 
@@ -2532,6 +2442,16 @@ body.dark .complaint-status{background:#1c3528;}
             </div>
 
 
+            <div class="setting-row">
+
+                <span data-i18n="layerControl">
+                    Kawalan Layer
+                </span>
+
+                <button onclick="showNotification('Kawalan layer QGIS2Web tersedia pada peta')" data-i18n="open">Buka</button>
+
+            </div>
+
         </div>
 
 
@@ -2584,16 +2504,6 @@ body.dark .complaint-status{background:#1c3528;}
 </div>
 
 
-
-/* =========================================================
-   WEBGIS_LANGUAGE_FINAL_FIX
-   Pastikan bahasa kekal selepas semua komponen dimuatkan.
-========================================================= */
-window.addEventListener("load", function(){
-    const savedLang = localStorage.getItem("webgis-language") || "ms";
-    changeLanguage(savedLang);
-});
-
 <!-- =====================================================
      QGIS2WEB SCRIPTS
 ===================================================== -->
@@ -2611,21 +2521,19 @@ window.addEventListener("DOMContentLoaded",function(){
 <script src="resources/olms.js"></script>
 
 
-<!-- =====================================================
-     QGIS2WEB LAYERS - MAP TERBARU
-===================================================== -->
-<script src="layers/IPOHTIMORDNIPOHBARAT_2025_26_1.js"></script>
-<script src="layers/LANDUSE2__2.js"></script>
-<script src="layers/mukimclipped_3.js"></script>
-<script src="layers/LANDUSE1__4.js"></script>
-<script src="layers/LANDUSE3__5.js"></script>
+<script src="layers/mukimclipped_1.js"></script>
+<script src="layers/parlimenpeninsular_2018_parlimen_2.js"></script>
+<script src="layers/landuse3landuse_residential_3.js"></script>
+<script src="layers/landuse2landuse_residential_4.js"></script>
+<script src="layers/landuse1landuse_residential_5.js"></script>
 <script src="layers/balai_polis__6.js"></script>
 
-<script src="styles/IPOHTIMORDNIPOHBARAT_2025_26_1_style.js"></script>
-<script src="styles/LANDUSE2__2_style.js"></script>
-<script src="styles/mukimclipped_3_style.js"></script>
-<script src="styles/LANDUSE1__4_style.js"></script>
-<script src="styles/LANDUSE3__5_style.js"></script>
+
+<script src="styles/mukimclipped_1_style.js"></script>
+<script src="styles/parlimenpeninsular_2018_parlimen_2_style.js"></script>
+<script src="styles/landuse3landuse_residential_3_style.js"></script>
+<script src="styles/landuse2landuse_residential_4_style.js"></script>
+<script src="styles/landuse1landuse_residential_5_style.js"></script>
 <script src="styles/balai_polis__6_style.js"></script>
 
 
@@ -2667,7 +2575,7 @@ const uiTextTranslations={
     "RUMAH":["HOUSE","住宅"],
     "KEDAI":["SHOP","商店"],
     "MASJID / SURAU / TOKONG":["MOSQUE / PRAYER HALL / TEMPLE","清真寺 / 祈祷室 / 寺庙"],
-    "MASJID/KUIL/TOKONG":["MOSQUE / PRAYER HALL / TEMPLE","清真寺 / 祈祷室 / 寺庙"],
+    "MASJID/SURAU/TOKONG":["MOSQUE / PRAYER HALL / TEMPLE","清真寺 / 祈祷室 / 寺庙"],
     "LAIN-LAIN":["OTHERS","其他"],
     "Data 2025":["2025 Data","2025年数据"],
     "PETA TABURAN KES":["CASE DISTRIBUTION MAP","案件分布地图"],
@@ -2742,95 +2650,21 @@ function translateAllVisibleText(lang){
 }
 
 function changeLanguage(lang){
-
-    const d = translations[lang] || translations.ms;
-
-    document.documentElement.lang = lang;
-
-    /* Semua elemen yang menggunakan data-i18n */
-    document.querySelectorAll("[data-i18n]").forEach(function(el){
-        const key = el.getAttribute("data-i18n");
-        if(d[key] !== undefined){
-            el.textContent = d[key];
-        }
+    const d=translations[lang]||translations.ms;
+    document.documentElement.lang=lang;
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+        const k=el.getAttribute("data-i18n");
+        if(d[k]) el.textContent=d[k];
     });
-
-    /* Placeholder */
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(function(el){
-        const key = el.getAttribute("data-i18n-placeholder");
-        if(d[key] !== undefined){
-            el.setAttribute("placeholder", d[key]);
-        }
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{
+        const k=el.getAttribute("data-i18n-placeholder");
+        if(d[k]) el.setAttribute("placeholder",d[k]);
     });
-
-    /* Select bahasa */
-    const select = document.getElementById("languageSelect");
-    if(select){
-        select.value = lang;
-        select.options[0].text = "🇲🇾 " + (lang==="ms" ? "Bahasa Melayu" : "Bahasa Melayu");
-        select.options[1].text = "🇬🇧 " + (lang==="en" ? "English" : "English");
-        select.options[2].text = "🇨🇳 " + (lang==="zh" ? "普通话" : "Mandarin");
-    }
-
-    /* Teks yang belum mempunyai data-i18n */
     translateAllVisibleText(lang);
-
-    /* Paksa bahagian Tetapan ikut bahasa semasa */
-    const settingsMap = {
-        ms:{
-            title:"Tetapan", display:"Paparan", dark:"Dark Mode",
-            sidebar:"Sidebar", collapse:"Runtuhkan", fullscreen:"Fullscreen",
-            map:"Peta", resetMap:"Reset Peta", reset:"Reset",
-            layer:"Kawalan Layer", open:"Buka", system:"Sistem",
-            version:"Versi Sistem", language:"Bahasa"
-        },
-        en:{
-            title:"Settings", display:"Display", dark:"Dark Mode",
-            sidebar:"Sidebar", collapse:"Collapse", fullscreen:"Fullscreen",
-            map:"Map", resetMap:"Reset Map", reset:"Reset",
-            layer:"Layer Control", open:"Open", system:"System",
-            version:"System Version", language:"Language"
-        },
-        zh:{
-            title:"设置", display:"显示", dark:"深色模式",
-            sidebar:"侧边栏", collapse:"收起", fullscreen:"全屏",
-            map:"地图", resetMap:"重置地图", reset:"重置",
-            layer:"图层控制", open:"打开", system:"系统",
-            version:"系统版本", language:"语言"
-        }
-    };
-
-    const s = settingsMap[lang] || settingsMap.ms;
-
-    const settingsTitle = document.querySelector(".settings-title h3 span");
-    const settingHeaders = document.querySelectorAll(".setting-section h4");
-    const rows = document.querySelectorAll(".settings .setting-row");
-
-    if(settingsTitle) settingsTitle.textContent = s.title;
-    if(settingHeaders[0]) settingHeaders[0].textContent = s.display;
-    if(settingHeaders[1]) settingHeaders[1].textContent = s.map;
-    if(settingHeaders[2]) settingHeaders[2].textContent = s.system;
-
-    if(rows[0]) rows[0].querySelector("span").textContent = s.dark;
-    if(rows[1]){
-        rows[1].querySelector("span").textContent = s.sidebar;
-        const b=rows[1].querySelector("button"); if(b) b.textContent=s.collapse;
-    }
-    if(rows[2]) rows[2].querySelector("span").textContent = s.fullscreen;
-    if(rows[3]){
-        rows[3].querySelector("span").textContent = s.resetMap;
-        const b=rows[3].querySelector("button"); if(b) b.textContent=s.reset;
-    }
-    if(rows[4]){
-        rows[4].querySelector("span").textContent = s.layer;
-        const b=rows[4].querySelector("button"); if(b) b.textContent=s.open;
-    }
-    if(rows[5]) rows[5].querySelector("span").textContent = s.version;
-    if(rows[6]) rows[6].querySelector("span").textContent = s.language;
-
-    localStorage.setItem("webgis-language", lang);
+    const s=document.getElementById("languageSelect");
+    if(s) s.value=lang;
+    localStorage.setItem("webgis-language",lang);
 }
-
 
 /* =====================================================
    QGIS2WEB MAP CONTAINER - SINGLE #map
@@ -2840,65 +2674,7 @@ function moveMapContainer(pageId){const el=document.getElementById("map");if(!el
 /* =====================================================
    ADUAN WARGA
 ===================================================== */
-async function submitComplaint(event){
-    event.preventDefault();
-
-    const form = document.getElementById("complaintForm");
-    const submitButton = form ? form.querySelector('button[type="submit"]') : null;
-
-    const complaint = {
-        name: document.getElementById("complaintName").value.trim(),
-        phone: document.getElementById("complaintPhone").value.trim(),
-        email: document.getElementById("complaintEmail").value.trim(),
-        category: document.getElementById("complaintCategory").value,
-        location: document.getElementById("complaintLocation").value.trim(),
-        description: document.getElementById("complaintDescription").value.trim()
-    };
-
-    if(!complaint.name || !complaint.phone || !complaint.location || !complaint.description){
-        showNotification("Sila lengkapkan semua maklumat wajib");
-        return;
-    }
-
-    const originalButtonHtml = submitButton ? submitButton.innerHTML : "";
-
-    try{
-        if(submitButton){
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menghantar...';
-            submitButton.style.opacity = ".70";
-            submitButton.style.cursor = "not-allowed";
-        }
-
-        showNotification("Sedang menghantar aduan...");
-
-        await fetch(
-            "https://script.google.com/macros/s/AKfycbwitt2BdCdZK33R02-2ov95UuPusCyrAmfW9bcvYrgh2SQstjWFo1y4ajf56iNW5gQH/exec",
-            {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                    "Content-Type": "text/plain;charset=utf-8"
-                },
-                body: JSON.stringify(complaint)
-            }
-        );
-
-        if(form) form.reset();
-        showNotification("Aduan berjaya dihantar. Sila semak Google Sheet.");
-
-    }catch(error){
-        console.error("Ralat penghantaran aduan:", error);
-        showNotification("Tidak dapat menghantar aduan. Sila cuba lagi.");
-    }finally{
-        if(submitButton){
-            submitButton.disabled = false;
-            submitButton.innerHTML = originalButtonHtml || '<i class="fas fa-paper-plane"></i> Hantar Aduan';
-            submitButton.style.opacity = "";
-            submitButton.style.cursor = "";
-        }
-    }
-}
+function submitComplaint(event){event.preventDefault();const c={id:"ADUAN-"+Date.now(),name:document.getElementById("complaintName").value.trim(),phone:document.getElementById("complaintPhone").value.trim(),email:document.getElementById("complaintEmail").value.trim(),category:document.getElementById("complaintCategory").value,location:document.getElementById("complaintLocation").value.trim(),description:document.getElementById("complaintDescription").value.trim(),date:new Date().toLocaleString("ms-MY"),status:"Diterima"};if(!c.name||!c.phone||!c.location||!c.description){showNotification("Sila lengkapkan semua maklumat wajib");return;}const records=JSON.parse(localStorage.getItem("webgis-complaints")||"[]");records.push(c);localStorage.setItem("webgis-complaints",JSON.stringify(records));document.getElementById("complaintForm").reset();showNotification("Aduan berjaya direkodkan: "+c.id);}
 
 /* =====================================================
    NAVIGATION
@@ -2930,7 +2706,6 @@ function showPage(pageId, element){
     }
 
     moveMapContainer(pageId);
-    if(pageId === "trend-page" && typeof updateTrendPage === "function") updateTrendPage();
 
     /*
        OpenLayers perlu resize semula apabila
@@ -3285,489 +3060,6 @@ function exportTable(){
 
 }
 
-</script>
-
-
-<!-- =====================================================
-     DATA 2025 + 2026 / YEAR FILTER
-     Added without removing the original QGIS2Web code.
-===================================================== -->
-<style>
-/* =====================================================
-   MAP CASE CATEGORY LABELS
-===================================================== */
-.map-dashboard, .map-page-container{position:relative;}
-.map-case-labels{position:absolute;top:12px;left:12px;z-index:999;display:flex;flex-direction:column;gap:7px;pointer-events:none;}
-.map-case-label{background:rgba(255,255,255,.94);border-left:4px solid #1687c9;border-radius:8px;padding:7px 10px;min-width:175px;box-shadow:0 5px 15px rgba(0,0,0,.14);font-size:12px;color:#17232d;}
-.map-case-label strong{display:block;font-size:13px;margin-bottom:2px;}
-.map-case-label span{font-weight:700;color:#1687c9;}
-body.dark .map-case-label{background:rgba(24,38,48,.96);color:#f2f6f8;box-shadow:0 5px 15px rgba(0,0,0,.35);}
-body.dark .map-case-label span{color:#67c2ff;}
-@media(max-width:700px){.map-case-label{min-width:145px}.map-case-labels{top:auto;bottom:12px;left:12px}}
-
-.area-comparison{margin-bottom:16px;padding:16px;overflow:visible;}
-.area-comparison-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px;}
-.area-comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:12px;}
-.housing-total{display:flex;align-items:baseline;gap:6px;margin-top:5px;color:#1687c9;}
-.housing-total strong{font-size:31px;line-height:1;}
-.housing-total span{font-size:12px;font-weight:700;}
-.area-card{border-radius:10px;padding:13px 16px;color:#fff;display:grid;grid-template-columns:1fr auto;align-items:end;gap:2px 10px;}
-.area-card-selatan{background:linear-gradient(135deg,#0e6597,#1687c9);color:#ffffff;}
-.area-card-barat{background:linear-gradient(135deg,#f8fbfd,#ffffff);color:#233746;border:1px solid #d8e3ea;}
-.area-card-barat .area-name,
-.area-card-barat strong,
-.area-card-barat small{color:#233746;}
-.area-card-selatan .area-name,
-.area-card-selatan strong,
-.area-card-selatan small{color:#ffffff;}
-.area-versus{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#8090a0;text-transform:uppercase;letter-spacing:.7px;}
-.area-card strong{font-size:28px;line-height:1;margin-top:5px;}
-.area-card small{font-size:11px;opacity:.9;}
-@media(max-width:600px){.area-comparison-grid{grid-template-columns:1fr}.area-versus{display:none}.area-card strong{font-size:24px}}
-
-.premise-chart-panel{margin-top:18px;}
-.premise-chart-body{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(300px,1.2fr);align-items:center;gap:26px;padding:26px;min-height:330px;}
-.premise-pie-wrap{display:flex;align-items:center;justify-content:center;}
-.premise-pie{width:245px;height:245px;border-radius:50%;position:relative;background:conic-gradient(#2586c1 0 70.3%,#e8a23a 70.3% 80.9%,#55a868 80.9% 81.9%,#c64e4e 81.9% 100%);box-shadow:0 10px 28px rgba(17,42,61,.14);transition:background .35s ease;}
-.premise-pie::after{content:"";position:absolute;inset:58px;border-radius:50%;background:var(--card);}
-.premise-pie-center{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
-.premise-pie-center strong{font-size:29px;line-height:1;color:var(--text);}
-.premise-pie-center span{margin-top:6px;font-size:11px;color:var(--muted);font-weight:700;}
-.premise-pie-legend{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.premise-pie-item{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:9px;padding:13px;border:1px solid var(--border);border-radius:10px;background:var(--card);}
-.premise-pie-swatch{width:11px;height:11px;border-radius:50%;}
-.premise-pie-label{font-size:11px;font-weight:700;color:var(--text);}
-.premise-pie-value{text-align:right;font-size:12px;color:var(--muted);}
-.premise-pie-value strong{display:block;font-size:17px;color:var(--text);}
-@media(max-width:750px){.premise-chart-body{grid-template-columns:1fr}.premise-pie-legend{grid-template-columns:1fr}.premise-pie{width:210px;height:210px}.premise-pie::after{inset:50px}}
-</style>
-
-<style>
-.year-control{
-    display:flex;
-    align-items:center;
-    gap:7px;
-    margin-right:4px;
-}
-.year-control label{
-    font-size:12px;
-    font-weight:700;
-    color:#d9e7f2;
-}
-#yearSelect{
-    min-width:100px;
-    padding:8px 10px;
-    border:1px solid rgba(255,255,255,.22);
-    border-radius:8px;
-    background:#193247;
-    color:#fff;
-    outline:none;
-    cursor:pointer;
-}
-body.dark #yearSelect{
-    background:#25343f;
-    color:#fff;
-    border-color:#3b4c58;
-}
-.year-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    margin-left:10px;
-    padding:6px 10px;
-    border-radius:999px;
-    background:#eaf5fb;
-    color:#0878bd;
-    font-size:12px;
-    font-weight:700;
-}
-body.dark .year-badge{
-    background:#243845;
-    color:#67c2ff;
-}
-@media(max-width:900px){
-    .year-control label{display:none}
-    #yearSelect{min-width:86px}
-}
-</style>
-
-<script>
-(function(){
-    /* Data copied from the uploaded CSV files. */
-    window.WEBGIS_DATA = {
-        "2025": [
-            ["JANUARI",45,14,0,10],
-            ["FEBRUARI",50,5,0,10],
-            ["MAC",43,3,0,6],
-            ["APRIL",46,6,1,13],
-            ["MEI",32,9,0,21],
-            ["JUN",35,4,2,17],
-            ["JULAI",32,2,0,9],
-            ["OGOS",44,8,0,14],
-            ["SEPTEMBER",34,8,1,2],
-            ["OKTOBER",35,3,1,2],
-            ["NOVEMBER",23,2,1,3],
-            ["DISEMBER",15,1,0,5]
-        ],
-        "2026": [
-            ["JANUARI",31,4,0,4],
-            ["FEBRUARI",30,2,0,0],
-            ["FEBRUARI",0,0,1,17],
-            ["MAC",25,5,0,9]
-        ]
-    };
-
-    /* Nilai kawasan daripada fail; rekod IPOH TIMUR dipaparkan sebagai IPOH SELATAN mengikut pilihan pengguna. */
-    window.WEBGIS_AREA_DATA = {
-        "2025": {barat:245, selatan:372},
-        "2026": {barat:57, selatan:71}
-    };
-
-    const monthOrder=["JANUARI","FEBRUARI","MAC","APRIL","MEI","JUN","JULAI","OGOS","SEPTEMBER","OKTOBER","NOVEMBER","DISEMBER"];
-    const monthShort={JANUARI:"JAN",FEBRUARI:"FEB",MAC:"MAC",APRIL:"APR",MEI:"MEI",JUN:"JUN",JULAI:"JUL",OGOS:"OGOS",SEPTEMBER:"SEP",OKTOBER:"OKT",NOVEMBER:"NOV",DISEMBER:"DIS"};
-
-    function getData(year){
-        const rows=WEBGIS_DATA[year]||[];
-        const out={};
-        monthOrder.forEach(m=>out[m]={month:m,rumah:0,kedai:0,masjid:0,lain:0});
-        rows.forEach(r=>{
-            const m=String(r[0]).trim().toUpperCase();
-            if(!out[m]) out[m]={month:m,rumah:0,kedai:0,masjid:0,lain:0};
-            out[m].rumah+=Number(r[1])||0;
-            out[m].kedai+=Number(r[2])||0;
-            out[m].masjid+=Number(r[3])||0;
-            out[m].lain+=Number(r[4])||0;
-        });
-        return monthOrder.map(m=>out[m]);
-    }
-
-    function totals(year){
-        return getData(year).reduce((a,r)=>{
-            a.rumah+=r.rumah;a.kedai+=r.kedai;a.masjid+=r.masjid;a.lain+=r.lain;
-            return a;
-        },{rumah:0,kedai:0,masjid:0,lain:0});
-    }
-
-    function totalCases(year){
-        const t=totals(year);
-        return t.rumah+t.kedai+t.masjid+t.lain;
-    }
-
-    function highestMonth(year){
-        return getData(year).reduce((best,r)=>{
-            const n=r.rumah+r.kedai+r.masjid+r.lain;
-            return n>best.n?{month:r.month,n:n}:best;
-        },{month:"-",n:-1});
-    }
-
-    function currentYear(){
-        return (document.getElementById("yearSelect")||{}).value || localStorage.getItem("webgis-year") || "2025";
-    }
-
-    function addYearSelector(){
-        const actions=document.querySelector(".header-actions");
-        if(!actions || document.getElementById("yearSelect")) return;
-        const wrap=document.createElement("div");
-        wrap.className="year-control";
-        wrap.innerHTML='<label for="yearSelect">Tahun</label><select id="yearSelect" aria-label="Pilih tahun"><option value="2025">2025</option><option value="2026">2026</option><option value="all">2025 + 2026</option></select>';
-        const search=actions.querySelector(".search-box");
-        if(search) actions.insertBefore(wrap,search);
-        else actions.insertBefore(wrap,actions.firstChild);
-        const saved=localStorage.getItem("webgis-year");
-        document.getElementById("yearSelect").value=(saved==="2026"||saved==="all")?saved:"2025";
-        document.getElementById("yearSelect").addEventListener("change",function(){
-            localStorage.setItem("webgis-year",this.value);
-            updateYearData();
-        });
-    }
-
-    function getCombined(){
-        const a=getData("2025"), b=getData("2026");
-        return a.map((r,i)=>({
-            month:r.month,
-            rumah:r.rumah+b[i].rumah,
-            kedai:r.kedai+b[i].kedai,
-            masjid:r.masjid+b[i].masjid,
-            lain:r.lain+b[i].lain
-        }));
-    }
-
-    function selectedRows(){
-        const y=currentYear();
-        if(y==="all") return getCombined();
-        return getData(y);
-    }
-
-    function selectedTotals(){
-        return selectedRows().reduce((a,r)=>{
-            a.rumah+=r.rumah;a.kedai+=r.kedai;a.masjid+=r.masjid;a.lain+=r.lain;return a;
-        },{rumah:0,kedai:0,masjid:0,lain:0});
-    }
-
-    function selectedTotal(){
-        const t=selectedTotals(); return t.rumah+t.kedai+t.masjid+t.lain;
-    }
-
-    function selectedAreaTotals(){
-        const y=currentYear();
-        if(y!=="all") return WEBGIS_AREA_DATA[y] || {barat:0,selatan:0};
-        return Object.values(WEBGIS_AREA_DATA).reduce((sum,row)=>({
-            barat:sum.barat+row.barat,
-            selatan:sum.selatan+row.selatan
-        }),{barat:0,selatan:0});
-    }
-
-    function updateAreaComparison(){
-        const data=selectedAreaTotals();
-        const y=currentYear()==="all"?"2025 + 2026":currentYear();
-        const lang=document.documentElement.lang||"ms";
-        const copy={
-            ms:{title:"JUMLAH KES PERUMAHAN",subtitle:"Kes mengikut kawasan bagi tahun ",unit:"kes"},
-            en:{title:"TOTAL HOUSING CASES",subtitle:"Cases by area for ",unit:"cases"},
-            zh:{title:"住宅案件总数",subtitle:"各地区案件：",unit:"宗案件"}
-        }[lang]||null;
-        const text=copy||{
-            title:"JUMLAH KES PERUMAHAN",subtitle:"Kes mengikut kawasan bagi tahun ",unit:"kes"
-        };
-        const west=document.getElementById("ipohBaratCases"), south=document.getElementById("ipohSelatanCases");
-        if(west) west.textContent=data.barat;
-        if(south) south.textContent=data.selatan;
-        const title=document.getElementById("housingTotalTitle");
-        const housingTotal=document.getElementById("housingTotalCases");
-        const subtitle=document.getElementById("areaComparisonSubtitle");
-        const badge=document.getElementById("areaComparisonYear");
-        if(title) title.textContent=text.title;
-        if(housingTotal) housingTotal.textContent=selectedTotals().rumah;
-        if(subtitle) subtitle.textContent=text.subtitle+y;
-        if(badge) badge.textContent=y;
-        document.querySelectorAll(".area-case-unit").forEach(el=>el.textContent=text.unit);
-    }
-
-    function updateYearLabels(){
-        const y=currentYear();
-        const label=y==="all"?"2025 + 2026":y;
-        document.querySelectorAll(".year-badge").forEach(e=>e.textContent=label);
-        document.querySelectorAll(".data-year-text").forEach(e=>e.textContent=label);
-        const title=document.querySelector(".header-title");
-        if(title){
-            const lang=document.documentElement.lang||"ms";
-            const map={
-                ms:"SISTEM WEB GIS JENAYAH PECAH RUMAH DI IPOH TAHUN ",
-                en:"WEB GIS SYSTEM FOR HOUSEBREAKING CRIME IN IPOH YEAR ",
-                zh:"怡保入屋盗窃罪案 Web GIS 系统 "
-            };
-            title.textContent=(map[lang]||map.ms)+label;
-        }
-        const brand=document.querySelector(".brand-text");
-        if(brand) brand.innerHTML="WEB GIS<br>IPoh "+label;
-    }
-
-    function updateDashboard(){
-        const t=selectedTotals(), total=selectedTotal();
-        const cards=document.querySelectorAll("#dashboard .stats .stat-card");
-        if(cards.length>=4){
-            cards[0].querySelector(".stat-number").textContent=total;
-            cards[1].querySelector(".stat-number").textContent=t.rumah;
-            cards[2].querySelector(".stat-number").textContent=t.kedai;
-            cards[3].querySelector(".stat-number").textContent=t.masjid;
-            const changes=cards[0].querySelector(".stat-change"); if(changes) changes.lastChild.textContent=" Data "+currentYear();
-            const c4=cards[3].querySelector(".stat-change"); if(c4) c4.lastChild.textContent=" Data "+currentYear();
-        }
-
-        const bars=document.querySelectorAll("#dashboard .dashboard-grid .panel:nth-child(2) .chart .bar");
-        const rows=selectedRows(), max=Math.max(...rows.map(r=>r.rumah+r.kedai+r.masjid+r.lain),1);
-        if(bars.length){
-            bars.forEach((bar,i)=>{
-                const r=rows[i];
-                if(!r){bar.style.display="none";return;}
-                bar.style.display="";
-                const n=r.rumah+r.kedai+r.masjid+r.lain;
-                bar.style.height=(n/max*78+8)+"%";
-                const strong=bar.querySelector("strong"), span=bar.querySelector("span");
-                if(strong) strong.textContent=n;
-                if(span) span.textContent=monthShort[r.month];
-            });
-        }
-        const center=document.querySelector("#dashboard .donut-center");
-        if(center) center.textContent=total;
-        const donut=document.querySelector("#dashboard .donut");
-        if(donut){
-            const p1=t.rumah/Math.max(total,1)*100, p2=p1+t.kedai/Math.max(total,1)*100, p3=p2+t.masjid/Math.max(total,1)*100;
-            donut.style.background=`conic-gradient(#2586c1 0 ${p1}%,#e8a23a ${p1}% ${p2}%,#55a868 ${p2}% ${p3}%,#c64e4e ${p3}% 100%)`;
-        }
-        const labels=document.querySelectorAll("#dashboard .dashboard-grid .panel");
-        if(labels[1]){const pt=labels[1].querySelector(".panel-title");if(pt)pt.textContent="TREND BULANAN ("+(currentYear()==="all"?"2025 + 2026":currentYear())+")";}
-        if(labels[2]){
-            const pt=labels[2].querySelector(".panel-title");if(pt)pt.textContent="KES MENGIKUT JENIS PREMIS";
-        }
-    }
-
-    function updateTable(){
-        const rows=selectedRows(), table=document.getElementById("statisticsTable");
-        if(table){
-            const body=table.querySelector("tbody");
-            if(body){
-                body.innerHTML=rows.map(r=>{
-                    const n=r.rumah+r.kedai+r.masjid+r.lain;
-                    return `<tr><td>${r.month}</td><td>${n}</td><td>${r.rumah}</td><td>${r.kedai}</td><td>${r.masjid}</td><td>${r.lain}</td></tr>`;
-                }).join("");
-            }
-        }
-        const firstTable=document.querySelector("#dashboard .data-table");
-        if(firstTable){
-            const body=firstTable.querySelector("tbody");
-            if(body){
-                body.innerHTML=rows.slice(0,4).map(r=>{
-                    const n=r.rumah+r.kedai+r.masjid+r.lain;
-                    return `<tr><td>${r.month}</td><td>${n}</td><td>${r.rumah}</td><td>${r.kedai}</td><td>${r.masjid}</td><td>${r.lain}</td></tr>`;
-                }).join("");
-            }
-        }
-        document.querySelectorAll("#jadual-page .page-subtitle").forEach(e=>e.textContent="Statistik bulanan kes pecah rumah tahun "+(currentYear()==="all"?"2025 + 2026":currentYear()));
-        document.querySelectorAll("#jadual-page .panel-title").forEach(e=>e.textContent="JADUAL STATISTIK KES PECAH RUMAH "+(currentYear()==="all"?"2025 + 2026":currentYear()));
-    }
-
-    function updatePremise(){
-        const t=selectedTotals(), total=Math.max(selectedTotal(),1);
-        const cards=document.querySelectorAll("#jenis-page .stats .stat-card");
-        const vals=[["RUMAH",t.rumah],["KEDAI",t.kedai],["MASJID/KUIL/TOKONG",t.masjid],["LAIN-LAIN",t.lain]];
-        cards.forEach((card,i)=>{
-            if(!vals[i])return;
-            card.querySelector(".stat-label").textContent=vals[i][0];
-            card.querySelector(".stat-number").textContent=vals[i][1];
-            const ls=card.querySelectorAll(".stat-label")[1];
-            if(ls) ls.textContent=(vals[i][1]/total*100).toFixed(1)+"%";
-        });
-
-        const pie=document.getElementById("premisePie");
-        const pieTotal=document.getElementById("premisePieTotal");
-        const legend=document.getElementById("premisePieLegend");
-        const year=currentYear()==="all"?"2025 + 2026":currentYear();
-        const lang=document.documentElement.lang||"ms";
-        const words={
-            ms:{title:"CARTA PAI JENIS PREMIS",subtitle:"Pecahan kes mengikut kategori premis bagi tahun ",total:"Jumlah Kes",labels:["Rumah","Kedai","Masjid/Surau/Tokong","Lain-lain"]},
-            en:{title:"PREMISE TYPE PIE CHART",subtitle:"Breakdown of cases by premise category for ",total:"Total Cases",labels:["House","Shop","Mosque/Prayer Hall/Temple","Others"]},
-            zh:{title:"场所类型饼图",subtitle:"各场所类别案件分布：",total:"案件总数",labels:["住宅","商店","清真寺/祈祷室/寺庙","其他"]}
-        }[lang]||null;
-        const text=words||{title:"CARTA PAI JENIS PREMIS",subtitle:"Pecahan kes mengikut kategori premis bagi tahun ",total:"Jumlah Kes",labels:["Rumah","Kedai","Masjid/Surau/Tokong","Lain-lain"]};
-        const numbers=[t.rumah,t.kedai,t.masjid,t.lain];
-        const colors=["#2586c1","#e8a23a","#55a868","#c64e4e"];
-        let cursor=0;
-        const stops=numbers.map((value,i)=>{
-            const start=cursor;
-            cursor+=value/total*100;
-            return `${colors[i]} ${start}% ${cursor}%`;
-        });
-        if(pie){
-            pie.style.background=`conic-gradient(${stops.join(",")})`;
-            pie.setAttribute("aria-label",text.title+": "+year);
-        }
-        if(pieTotal) pieTotal.textContent=selectedTotal();
-        const centerLabel=document.querySelector("#jenis-page .premise-pie-center span");
-        if(centerLabel) centerLabel.textContent=text.total;
-        const title=document.getElementById("premisePieTitle");
-        const subtitle=document.getElementById("premisePieSubtitle");
-        const badge=document.getElementById("premisePieYear");
-        if(title) title.textContent=text.title;
-        if(subtitle) subtitle.textContent=text.subtitle+year;
-        if(badge) badge.textContent=year;
-        if(legend){
-            legend.innerHTML=numbers.map((value,i)=>`<div class="premise-pie-item"><span class="premise-pie-swatch" style="background:${colors[i]}"></span><span class="premise-pie-label">${text.labels[i]}</span><span class="premise-pie-value"><strong>${value}</strong>${(value/total*100).toFixed(1)}%</span></div>`).join("");
-        }
-    }
-
-    function updateReport(){
-        const total=selectedTotal(), rows=selectedRows(), hm=rows.reduce((best,r)=>{
-            const n=r.rumah+r.kedai+r.masjid+r.lain;return n>best.n?{m:r.month,n:n}:best;
-        },{m:"-",n:-1});
-        const t=selectedTotals();
-        const highest=[["Rumah",t.rumah],["Kedai",t.kedai],["Masjid/Surau/Tokong",t.masjid],["Lain-lain",t.lain]].sort((a,b)=>b[1]-a[1])[0];
-        const cards=document.querySelectorAll("#laporan-page .stats .stat-card");
-        if(cards[0]) cards[0].querySelector(".stat-number").textContent=total;
-        if(cards[1]) cards[1].querySelector(".stat-number").textContent=highest[0];
-        if(cards[2]) cards[2].querySelector(".stat-number").textContent=hm.n;
-        const p1=document.querySelector("#laporan-page [data-i18n='reportText1']");
-        const p2=document.querySelector("#laporan-page [data-i18n='reportText2']");
-        const y=currentYear()==="all"?"2025 + 2026":currentYear();
-        if(p1) p1.textContent="Sistem Web GIS ini memaparkan taburan dan statistik kes pecah rumah di kawasan Ipoh bagi tahun "+y+". Sistem menggabungkan maklumat spatial, statistik bulanan dan kategori premis dalam satu paparan interaktif.";
-        if(p2) p2.textContent="Berdasarkan data yang dipaparkan, kategori "+highest[0].toLowerCase()+" merupakan kategori dengan jumlah kes tertinggi.";
-    }
-
-    function updateTrendPage(){
-        const chart=document.getElementById("trendPageChart");
-        if(!chart) return;
-        const rows=selectedRows();
-        const vals=rows.map(r=>r.rumah+r.kedai+r.masjid+r.lain);
-        const max=Math.max(...vals,1);
-        chart.innerHTML=rows.map((r,i)=>{
-            const n=vals[i];
-            const h=n>0 ? (n/max*78+8) : 0;
-            return `<div class="bar" style="height:${h}%">`+
-                   `<strong>${n}</strong><span>${monthShort[r.month]}</span></div>`;
-        }).join("");
-
-        const year=currentYear()==="all"?"2025 + 2026":currentYear();
-        const title=document.querySelector("#trend-page .panel-title");
-        if(title) title.textContent="Trend Kes Pecah Rumah "+year;
-        const subtitle=document.querySelector("#trend-page .page-subtitle");
-        if(subtitle) subtitle.textContent="Perubahan jumlah kes mengikut bulan bagi tahun "+year;
-    }
-
-    function mapCaseTotals(){
-        const y=currentYear();
-        const rows=y==="all" ? getCombined() : getData(y);
-        return rows.reduce((a,r)=>{
-            a.rumah+=r.rumah; a.kedai+=r.kedai; a.masjid+=r.masjid; a.lain+=r.lain;
-            return a;
-        },{rumah:0,kedai:0,masjid:0,lain:0});
-    }
-
-    function updateMapCaseLabels(){
-        const labels=document.getElementById('mapPageLabels');
-        if(!labels) return;
-        const y=currentYear();
-        const yearText=y==="all"?"2025 + 2026":y;
-        const t=mapCaseTotals();
-        labels.innerHTML=`
-            <div class="map-case-label" data-label-key="rumah"><strong>Rumah</strong><span>${t.rumah} kes</span></div>
-            <div class="map-case-label" data-label-key="kedai"><strong>Kedai</strong><span>${t.kedai} kes</span></div>
-            <div class="map-case-label" data-label-key="masjid"><strong>Masjid/Kuil/Tokong</strong><span>${t.masjid} kes</span></div>
-            <div class="map-case-label" data-label-key="lain"><strong>Lain-lain</strong><span>${t.lain} kes</span></div>`;
-        labels.dataset.year=yearText;
-    }
-
-    function updateYearData(){
-        addYearSelector();
-        updateMapCaseLabels();
-        updateAreaComparison();
-        updateDashboard();
-        updateTrendPage();
-        updateTable();
-        updatePremise();
-        updateReport();
-        updateYearLabels();
-    }
-
-    window.updateYearData=updateYearData;
-    document.addEventListener("DOMContentLoaded",function(){
-        setTimeout(updateYearData,80);
-        setTimeout(function(){
-            const ls=document.getElementById("languageSelect");
-            if(ls && !ls.dataset.yearSync){
-                ls.dataset.yearSync="1";
-                ls.addEventListener("change",function(){ setTimeout(updateYearData,20); });
-            }
-        },120);
-    });
-    setTimeout(updateYearData,250);
-    setTimeout(function(){
-        const ls=document.getElementById("languageSelect");
-        if(ls && !ls.dataset.yearSync){
-            ls.dataset.yearSync="1";
-            ls.addEventListener("change",function(){ setTimeout(updateYearData,20); });
-        }
-    },400);
-})();
 </script>
 
 </body>
